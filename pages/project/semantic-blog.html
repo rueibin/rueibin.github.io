@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../static/css/custom.css">
+</head>
+<body>
+
+<nav class="ui attached segment c-padded-tb-mini header-include">
+</nav>
+
+<div class="c-padded-tb-large">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!-- left content list-->
+            <div class="twelve wide column">
+                <!--left content list content-->
+                <div class="ui attached stackable segment">
+                    <div class="ui centered header">
+                        <h1 class="ui blue header">Semantic-ui個人Blog網站</h1>
+                        <div class="ui horizontal link list">
+                            <div class="item">
+                                <i class="clock outline icon"></i>2022-06-14
+                            </div>
+                            <div class="item">
+                                <i class="idea icon"></i>作品
+                            </div>
+                            <div class="item">
+                                <i class="tag icon"></i>前端
+                            </div>
+                        </div>
+                        <div class="ui fitted divider"></div>
+                    </div>
+
+                    <div class="c-padded-left-right-responsive">
+                        <h3 class="ui pink header">前言</h3>
+                        <p class="c-text-indent c-text-16">
+                            使用Semantic-ui來建置個人Blog網站，這個網站是靜態網站，沒有使用到後端程式與資料庫，因為放在GitHub上面，只有使用Html+JS+jQuery，不過，這樣也就夠了。
+                        </p>
+                        <p class="c-text-indent c-text-16">
+                            一個網站中有很多共用的資料，依本專案的網頁舉例，如：導覽列，分類，基礎學習，頁尾等，每次新增網頁或者修改共同的資料，就要修改全部的網頁，這樣維護很花時間成本。
+                        </p>
+                        <p class="c-text-indent c-text-16">
+                            所以，本專案只有用一個js檔案來維護全部網頁，而網頁是沒有寫任何的資料內容，只有layout而已。
+                        </p>
+
+                        <h3 class="ui pink  header c-margin-top-large">系統說明</h3>
+                        <ul class="ui list">
+                            <div class="item c-text-16 c-text-spaced">系統名稱 : 個人Blog網站</div>
+                            <div class="item c-text-16 c-text-spaced">開發年分 : 2022年</div>
+                            <div class="item c-text-16 c-text-spaced">開發工具 : WebStorm</div>
+                            <div class="item c-text-16 c-text-spaced">開發語言 : HTML</div>
+                            <div class="item c-text-16 c-text-spaced">運行環境 : Windows</div>
+                            <div class="item c-text-16 c-text-spaced">正式運營：<a href=" https://rueibin.github.io/">https://rueibin.github.io/</a></div>
+                        </ul>
+
+                        <h3 class="ui pink  header c-margin-top-large">使用技術</h3>
+                        <ol class="ui list">
+                            <li value="*" class="c-text-16 c-text-spaced">Semantic-ui</li>
+                            <li value="*" class="c-text-16 c-text-spaced">JavaScript</li>
+                            <li value="*" class="c-text-16 c-text-spaced">jQuery</li>
+                            <li value="*" class="c-text-16 c-text-spaced">localStorage</li>
+                        </ol>
+
+                        <h3 class="ui pink header c-margin-top-large">功能說明</h3>
+                        <ol class="ui list">
+                            <li value="*" class="c-text-16 c-text-spaced">RWD功能，依不同的設備，顯示內容</li>
+                            <li value="*" class="c-text-16 c-text-spaced">分頁功能，每頁顯示5筆資料</li>
+                            <li value="*" class="c-text-16 c-text-spaced">搜尋功能，整站搜尋，搜尋標題關鍵字</li>
+                        </ol>
+
+                        <h3 class="ui pink  header c-margin-top-large">功能截圖</h3>
+                        <p class="c-text-16">首頁</p>
+                        <img src="../../static/images/semantic-index.PNG" alt="" class="ui rounded image">
+                        <p></p>
+
+                        <p class="c-text-16">內頁</p>
+                        <img src="../../static/images/semantic-content.PNG" alt="" class="ui rounded image">
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- right top content-->
+            <div class="four wide column right-content-include">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="ui inverted vertical segment c-padded-tb-massive footer-include">
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script id="us"></script>
+<script>
+    $('#us').attr('src','../../static/js/custom.js?v='+new Date());
+</script>
+</body>
+</html>

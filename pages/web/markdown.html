@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../static/editormd/css/editormd.preview.min.css">
+    <link rel="stylesheet" href="../../static/css/custom.css">
+</head>
+<body>
+
+<nav class="ui attached segment c-padded-tb-mini header-include">
+</nav>
+
+<div class="c-padded-tb-large">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!-- left content list-->
+            <div class="twelve wide column">
+                <!--left content list content-->
+                <div class="ui attached stackable segment">
+                    <div class="ui centered header">
+                        <h1 class="ui blue header">快來學editor.md，將Markdown嵌入到HTML</h1>
+                        <div class="ui horizontal link list">
+                            <div class="item">
+                                <i class="clock outline icon"></i>2021-08-31
+                            </div>
+                            <div class="item">
+                                <i class="idea icon"></i>前端
+                            </div>
+                            <div class="item">
+                                <i class="tag icon"></i>前端
+                            </div>
+                        </div>
+                        <div class="ui fitted divider"></div>
+                    </div>
+
+                    <div class="c-padded-left-right-responsive">
+                        <h3 class="ui pink header">前言</h3>
+                        <p  class="c-text-indent c-text-16">最近在寫學習筆記，正在煩惱如何將程碼嵌入到網頁中，在谷哥的幫助下，終於讓我找到這個神器。</p>
+                        <p  class="c-text-indent c-text-16">使用很easy，容易上手，效果是我要的。</p>
+
+                        <h3 class="ui pink  header c-margin-top-large">官方網址：</h3>
+                        <ul class="ui list">
+                            <div class="item c-text-16 c-text-spaced">官方網址:<a href=" https://pandao.github.io/editor.md/index.html" target="_blank"> MEditor.md</a></div>
+                            <div class="item c-text-16 c-text-spaced">下載:<a href="https://github.com/pandao/editor.md/archive/master.zip"> download</a></div>
+                        </ul>
+
+                        <h3 class="ui pink  header c-margin-top-large">使用</h3>
+                        <p class="c-text-16">(1)導入相關套件</p>
+                        <div id="editormd-view1">
+                            <textarea style="display:none;">
+```html
+<link rel="stylesheet" href="editormd/css/editormd.preview.min.css">
+<script src="editormd/marked.min.js"></script>
+<script src="editormd/prettify.min.js"></script>
+<script src="editormd/raphael.min.js"></script>
+<script src="editormd/underscore.min.js"></script>
+<script src="editormd/sequence-diagram.min.js"></script>
+<script src="editormd/flowchart.min.js"></script>
+<script src="editormd/jquery.flowchart.min.js"></script>
+<script src="editormd/editormd.min.js"></script>
+```
+
+
+                            </textarea>
+                        </div>
+
+                        <p class="c-text-16">(2)建立div</p>
+                        <ol class="ui list">
+                            <li value="*">建立div，id為editormd-view</li>
+                            <li value="*">建立textarea，新增style屬性，設定display為none</li>
+                            <li value="*">textarea嵌入div</li>
+                        </ol>
+
+                        <p></p>
+                        <p class="c-text-16">(3)通對JS對textarea進行渲染</p>
+                        <div id="editormd-view3">
+                            <textarea style="display:none;">
+```html
+<script>
+    editormd.markdownToHTML("editormd-view);
+</script>
+```
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right top content-->
+            <div class="four wide column right-content-include">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="ui inverted vertical segment c-padded-tb-massive footer-include">
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../../static/editormd/marked.min.js"></script>
+<script src="../../static/editormd/prettify.min.js"></script>
+<script src="../../static/editormd/raphael.min.js"></script>
+<script src="../../static/editormd/underscore.min.js"></script>
+<script src="../../static/editormd/sequence-diagram.min.js"></script>
+<script src="../../static/editormd/flowchart.min.js"></script>
+<script src="../../static/editormd/jquery.flowchart.min.js"></script>
+<script src="../../static/editormd/editormd.min.js"></script>
+<script id="us"></script>
+<script>
+    $(document).ready(function(){
+        $('#us').attr('src','../../static/js/custom.js?v='+new Date());
+        editormd.markdownToHTML("editormd-view1");
+        editormd.markdownToHTML("editormd-view2");
+        editormd.markdownToHTML("editormd-view3");
+    });
+</script>
+</body>
+</html>

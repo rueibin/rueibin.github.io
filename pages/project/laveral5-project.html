@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../static/css/custom.css">
+</head>
+<body>
+
+<nav class="ui attached segment c-padded-tb-mini header-include">
+</nav>
+
+<div class="c-padded-tb-large">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!-- left content list-->
+            <div class="twelve wide column">
+                <!--left content list content-->
+                <div class="ui attached stackable segment">
+                    <div class="ui centered header">
+                        <h1 class="ui blue header">Laravel 5 專案管理系統</h1>
+                        <div class="ui horizontal link list">
+                            <div class="item">
+                                <i class="clock outline icon"></i>2021-08-24
+                            </div>
+                            <div class="item">
+                                <i class="idea icon"></i>作品
+                            </div>
+                            <div class="item">
+                                <i class="tag icon"></i>PHP
+                            </div>
+                        </div>
+                        <div class="ui fitted divider"></div>
+                    </div>
+
+                    <div class="c-padded-left-right-responsive">
+                        <h3 class="ui pink header">前言</h3>
+                        <p class="c-text-indent c-text-16">
+                            使用Laravel來開發一個專案管理系統。可以新增專案，並指定專案負責人（1人或多人）與專案成員，
+                            專案在新增任務時，可以設定規定完成日期與預計完成日期，並指派任務給成員。
+                        </p>
+                        <p class="c-text-indent c-text-16">
+                            專案是以列表呈現，而專案任務是以甘特圖呈現。在專案列表可以看到整個專案進度的百分比，
+                            專案任務可以看到每個任務完成的百分比和任務日期是否逾期。
+                        </p>
+                        <p class="c-text-indent c-text-16">
+                            專案的進度是由任務自動統計，所以，專案成員必須到自己的任務列表填寫任務進度。
+                        </p>
+
+                        <h3 class="ui pink  header c-margin-top-large">系統說明</h3>
+                        <ul class="ui list">
+                            <div class="item c-text-16 c-text-spaced">系統名稱 : Laravel 5 專案管理系統</div>
+                            <div class="item c-text-16 c-text-spaced">開發年分 : 2018年</div>
+                            <div class="item c-text-16 c-text-spaced">開發工具 : Visual Studio Code</div>
+                            <div class="item c-text-16 c-text-spaced">開發語言 : PHP Laravel </div>
+                            <div class="item c-text-16 c-text-spaced">資料庫 : MySQL 5.7</div>
+                            <div class="item c-text-16 c-text-spaced">運行環境 : Windows WAMP Server</div>
+                            <div class="item c-text-16 c-text-spaced">Source Code :</div>
+                        </ul>
+
+                        <h3 class="ui pink  header c-margin-top-large">使用技術</h3>
+                        <ol class="ui list">
+                            <li value="*" class="c-text-16 c-text-spaced">Laravel</li>
+                            <li value="*" class="c-text-16 c-text-spaced">jQuery</li>
+                            <li value="*" class="c-text-16 c-text-spaced">Entrust</li>
+                            <li value="*" class="c-text-16 c-text-spaced">dhtmlxGantt</li>
+                        </ol>
+
+                        <h3 class="ui pink header c-margin-top-large">功能說明</h3>
+                        <ol class="ui list">
+                            <li value="1" class="c-text-16 c-text-spaced">專案管理：
+                                <ol>
+                                    <li value="" class="c-text-16 c-text-spaced">可以新增專案並指定專案成員。</li>
+                                    <li value="" class="c-text-16 c-text-spaced">可以新增專案任務，並指定負責人，可以設定任務開始結束日期，也可以預計執行結束日期</li>
+                                    <li value="" class="c-text-16 c-text-spaced">可以顯示專案進度與任務進度。</li>
+                                </ol>
+                            </li>
+                            <li value="2" class="c-text-16 c-text-spaced">個人管理：
+                                <ol>
+                                    <li value="2.1" class="c-text-16 c-text-spaced">任務管理：
+                                        <ol>
+                                            <li value="" class="c-text-16 c-text-spaced">任務的來源由專案指派。</li>
+                                            <li value="" class="c-text-16 c-text-spaced">可以編輯任務進度，編輯後也會顯示在專案進度中。</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li value="3" class="c-text-16 c-text-spaced">權限管理：
+                                <ol>
+                                    <li value="" class="c-text-16 c-text-spaced">可以新增權限，角色，帳號。</li>
+                                    <li value="" class="c-text-16 c-text-spaced">角色可以指定權限。</li>
+                                    <li value="" class="c-text-16 c-text-spaced">帳號可以指定角色。</li>
+                                </ol>
+                            </li>
+                        </ol>
+
+                        <h3 class="ui pink  header c-margin-top-large">功能截圖</h3>
+                        <p class="c-text-16">登入畫面</p>
+                        <img src="../../static/images/lp-login.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">新增專案</p>
+                        <img src="../../static/images/lp-p-create.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">專案列表</p>
+                        <img src="../../static/images/lp-p-list.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">新增專案任務</p>
+                        <img src="../../static/images/lp-p-t-create.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">專案任務列表</p>
+                        <img src="../../static/images/lp-p-t-list.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">swallow帳號任務列表</p>
+                        <img src="../../static/images/lp-t-us-list.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">antonia帳號任務列表</p>
+                        <img src="../../static/images/lp-t-ua-list.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">專案列表：進度</p>
+                        <img src="../../static/images/lp-p-list-result.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">專案任務列表：進度</p>
+                        <img src="../../static/images/lp-p-t-create-result.PNG" alt="" class="ui rounded image">
+                        <p></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- right top content-->
+            <div class="four wide column right-content-include">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="ui inverted vertical segment c-padded-tb-massive footer-include">
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script id="us"></script>
+<script>
+    $('#us').attr('src','../../static/js/custom.js?v='+new Date());
+</script>
+</body>
+</html>

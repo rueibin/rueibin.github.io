@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../static/css/custom.css">
+</head>
+<body>
+
+<nav class="ui attached segment c-padded-tb-mini header-include">
+</nav>
+
+<div class="c-padded-tb-large">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!-- left content list-->
+            <div class="twelve wide column">
+                <!--left content list content-->
+                <div class="ui attached stackable segment">
+                    <div class="ui centered header">
+                        <h1 class="ui blue header">Laravel 5 圖書借閱歸還管理系統</h1>
+                        <div class="ui horizontal link list">
+                            <div class="item">
+                                <i class="clock outline icon"></i>2021-08-18
+                            </div>
+                            <div class="item">
+                                <i class="idea icon"></i>作品
+                            </div>
+                            <div class="item">
+                                <i class="tag icon"></i>PHP
+                            </div>
+                        </div>
+                        <div class="ui fitted divider"></div>
+                    </div>
+
+                    <div class="c-padded-left-right-responsive">
+                        <h3 class="ui pink header">前言</h3>
+                        <p class="c-text-indent c-text-16">
+                            使用Laravel來開發一個圖書借閱歸還管理系統。因剛學了Laravel，來測試學完Laravel的熟悉度。
+                            跟CodeIgniter比較起來Laravel，Laravel學習曲線長，
+                            Laravel具有驗證，路由，Session，緩存，資料庫遷移，單元測試常用的工具和功能。
+                            Laravel框架有一個特點，就是所有的URL存取都必須事先定好路由規則。
+                        </p>
+
+                        <p class="c-text-indent c-text-16">
+                            Laravel是MVC分層架構，這跟CodeIgniter是一樣，
+                            來搞一些不一樣的，在MVC三層中再增加兩層，分別是Repository層與Service層。
+                            把資料從Controller層抽離出來，Controller層只做轉發與接收的動作。
+                            Service層處理商業邏輯，Injection Controller層。
+                            Repository層處理資料庫邏輯，Injection Service層。
+                            Model層是資料表的對應欄位，Injection Repository層。
+                        </p>
+
+                        <h3 class="ui pink  header c-margin-top-large">系統說明</h3>
+                        <ul class="ui list">
+                            <div class="item c-text-16 c-text-spaced">系統名稱 : Laravel 5 圖書借閱歸還管理系統</div>
+                            <div class="item c-text-16 c-text-spaced">開發年分 : 2018年</div>
+                            <div class="item c-text-16 c-text-spaced">開發工具 : Visual Studio Code</div>
+                            <div class="item c-text-16 c-text-spaced">開發語言 : Laravel</div>
+                            <div class="item c-text-16 c-text-spaced">資料庫 : MySQL 5.7</div>
+                            <div class="item c-text-16 c-text-spaced">運行環境 : Windows WAMP Server</div>
+                            <div class="item c-text-16 c-text-spaced">Source Code :<a href="https://github.com/rueibin/Laravel-5-Library-Management-System"> Laravel-5-Library-Management-System</a></div>
+                        </ul>
+
+                        <h3 class="ui pink header c-margin-top-large">使用技術</h3>
+                        <ol class="ui list">
+                            <li value="*" class="c-text-16 c-text-spaced">Laravel</li>
+                            <li value="*" class="c-text-16 c-text-spaced">Repository Pattern與Service Pattern</li>
+                            <li value="*" class="c-text-16 c-text-spaced">jQuery</li>
+                            <li value="*" class="c-text-16 c-text-spaced">Entrust</li>
+                        </ol>
+
+                        <h3 class="ui pink header c-margin-top-large">功能說明</h3>
+                        <ol class="ui list">
+                            <li value="*" class="c-text-16 c-text-spaced">權限管理：可以新增權限，角色，帳號。帳號可以指定角色。</li>
+                            <li value="*" class="c-text-16 c-text-spaced">基本設定：可以新增書架，圖書類型，出版社。</li>
+                            <li value="*" class="c-text-16 c-text-spaced">讀者管理：可以新增讀者資料，並設定圖書借閱數。</li>
+                            <li value="*" class="c-text-16 c-text-spaced">圖書檔案管理：可以新增圖書資料，指定圖書類與書架。</li>
+                            <li value="*" class="c-text-16 c-text-spaced">圖書借還管理：圖書借閱與圖書歸操作。</li>
+                        </ol>
+                        <h3 class="ui pink header c-margin-top-large">功能截圖</h3>
+                        <p class="c-text-16">登入頁</p>
+                        <img src="../../static/images/ll-login.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">首頁</p>
+                        <img src="../../static/images/ll-index.PNG" alt ="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">權限設定</p>
+                        <img src="../../static/images/ll-permission.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">角色設定</p>
+                        <img src="../../static/images/ll-role.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">帳號設定</p>
+                        <img src="../../static/images/ll-manager.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">書架設定</p>
+                        <img src="../../static/images/ll-bookcase.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">圖書類型設定</p>
+                        <img src="../../static/images/ll-booktype.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">出版社設定</p>
+                        <img src="../../static/images/ll-publishing.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">圖書檔案管理</p>
+                        <img src="../../static/images/ll-book.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">讀者管理</p>
+                        <img src="../../static/images/ll-reader.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">圖書借閱</p>
+                        <img src="../../static/images/ll-borrow.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">圖書歸還</p>
+                        <img src="../../static/images/ll-back.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right top content-->
+            <div class="four wide column right-content-include">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="ui inverted vertical segment c-padded-tb-massive footer-include">
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script id="us"></script>
+<script>
+    $('#us').attr('src','../../static/js/custom.js?v='+new Date());
+</script>
+</body>
+</html>

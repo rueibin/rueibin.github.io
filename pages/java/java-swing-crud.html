@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../static/css/custom.css">
+</head>
+<body>
+
+<nav class="ui attached segment c-padded-tb-mini header-include">
+</nav>
+
+<div class="c-padded-tb-large">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!-- left content list-->
+            <div class="twelve wide column">
+                <!--left content list content-->
+                <div class="ui attached stackable segment">
+                    <div class="ui centered header">
+                        <h1 class="ui blue header">簡單的Java Swing CRUD應用</h1>
+                        <div class="ui horizontal link list">
+                            <div class="item">
+                                <i class="clock outline icon"></i>2021-08-18
+                            </div>
+                            <div class="item">
+                                <i class="idea icon"></i>網頁程式APP
+                            </div>
+                            <div class="item">
+                                <i class="tag icon"></i>Java
+                            </div>
+                        </div>
+                        <div class="ui fitted divider"></div>
+                    </div>
+
+                    <div class="c-padded-left-right-responsive">
+                        <h3 class="ui pink header">前言</h3>
+                        <p class="c-text-indent c-text-16">
+                            使用Java Swing來開發一個圖形界面的員工管理系統。
+                            涉及Swing裡常用的元件與監廳器，包括JFrame、JPanel、JTable、JLabel、JButton與各種Layout等。
+                            本專案採用分層結構設計，有dao層，entity層，util層等。
+                            使用原生的JDBC技術來連接MySQL。
+                        </p>
+
+                        <h3 class="ui pink header c-margin-top-large">系統說明</h3>
+                        <ul class="ui list">
+                            <div class="item c-text-16 c-text-spaced">系統名稱 : Java Swing CRUD</div>
+                            <div class="item c-text-16 c-text-spaced">開發年分 : 2021年</div>
+                            <div class="item c-text-16 c-text-spaced">開發工具 : Eclipse</div>
+                            <div class="item c-text-16 c-text-spaced">開發語言 : Java 1.8</div>
+                            <div class="item c-text-16 c-text-spaced">資料庫 : MySQL 5.7</div>
+                            <div class="item c-text-16 c-text-spaced">運行環境 : Windows</div>
+                            <div class="item c-text-16 c-text-spaced">Source Code :<a href="https://github.com/rueibin/Simple-Java-Swing-CRUD"> Simple-Java-Swing-CRUD</a></div>
+                        </ul>
+
+                        <h3 class="ui pink header c-margin-top-large">系統架構</h3>
+                        <ol class="ui list">
+                            <li value="*" class="c-text-16 c-text-spaced">dao層：資料存取類</li>
+                            <li value="*" class="c-text-16 c-text-spaced">entity層：封裝物件業務類與資料表對應</li>
+                            <li value="*" class="c-text-16 c-text-spaced">exception層：例外類</li>
+                            <li value="*" class="c-text-16 c-text-spaced">test層：測試類</li>
+                            <li value="*" class="c-text-16 c-text-spaced">util層：工具類，如資料庫連線類</li>
+                            <li value="*" class="c-text-16 c-text-spaced">view層：所有的視窗類</li>
+                        </ol>
+
+                        <h3 class="ui pink header c-margin-top-large">使用技術</h3>
+                        <ol class="ui list">
+                            <li value="*" class="c-text-16 c-text-spaced">JDBC</li>
+                            <li value="*" class="c-text-16 c-text-spaced">Java Swing</li>
+                            <li value="*" class="c-text-16 c-text-spaced">Singleton（資料庫連線）</li>
+                        </ol>
+
+                        <h3 class="ui pink header c-margin-top-large">功能說明</h3>
+                        <ol class="ui list">
+                            <li value="*" class="c-text-16 c-text-spaced">程式啟動顯示主界面，顯示所有員工資料</li>
+                            <li value="*" class="c-text-16 c-text-spaced">點擊查詢按鈕，能夠根據姓名模糊查詢，顯示符合查詢條件的員工資料</li>
+                            <li value="*" class="c-text-16 c-text-spaced">新增員工信息，點擊新增按鈕，將員工資料儲存到資料庫中，保存成功，給出提示添加成功。</li>
+                            <li value="*" class="c-text-16 c-text-spaced">選中某個員工，點擊修改按鈕，將員工資料儲存到資料庫中，修改成功，給出提示修改成功。</li>
+                            <li value="*" class="c-text-16 c-text-spaced">選中某個員工，點擊刪除按鈕，提示是否刪除</li>
+                        </ol>
+
+                        <h3 class="ui pink header c-margin-top-large">資料庫</h3>
+                        <p class="c-text">員工資料表</p>
+                        <table class="ui celled table">
+                            <thead>
+                            <tr>
+                                <th>欄位名稱</th>
+                                <th>欄位說明</th>
+                                <th>型態</th>
+                                <th>NULL</th>
+                                <th>其它</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td data-label="id">id</td>
+                                <td data-label="id">員工id</td>
+                                <td data-label="id">INT(11)</td>
+                                <td data-label="id">NOT NULL</td>
+                                <td data-label="id">AUTO_INCREMENT,PK</td>
+                            </tr>
+                            <tr>
+                                <td data-label="name">name</td>
+                                <td data-label="name">員工姓名</td>
+                                <td data-label="name">VARCHAR(10)</td>
+                                <td data-label="name">NOT NULL</td>
+                                <td data-label="name"></td>
+                            </tr>
+                            <tr>
+                                <td data-label="gender">gender</td>
+                                <td data-label="gender">性別</td>
+                                <td data-label="gender">INT(11)</td>
+                                <td data-label="gender">NOT NULL</td>
+                                <td data-label="gender"></td>
+                            </tr>
+                            <tr>
+                                <td data-label="email">email</td>
+                                <td data-label="email">email</td>
+                                <td data-label="email">VARCHAR(10)</td>
+                                <td data-label="email">NOT NULL</td>
+                                <td data-label="email"></td>
+                            </tr>
+                            <tr>
+                                <td data-label="dept_id">dept_id</td>
+                                <td data-label="dept_id">部門id</td>
+                                <td data-label="dept_id">INT(11)</td>
+                                <td data-label="dept_id">NOT NULL</td>
+                                <td data-label="dept_id"></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                        <p class="c-text-16">部門資料表</p>
+                        <table class="ui celled table">
+                            <thead>
+                            <tr><th>欄位名稱</th>
+                                <th>欄位說明</th>
+                                <th>型態</th>
+                                <th>NULL</th>
+                                <th>其它</th>
+                            </tr></thead>
+                            <tbody>
+                            <tr>
+                                <td data-label="id">id</td>
+                                <td data-label="id">部門id</td>
+                                <td data-label="id">INT(11)</td>
+                                <td data-label="id">NOT NULL</td>
+                                <td data-label="id">AUTO_INCREMENT,PK</td>
+                            </tr>
+                            <tr>
+                                <td data-label="name">name</td>
+                                <td data-label="name">部門名稱</td>
+                                <td data-label="name">VARCHAR(10)</td>
+                                <td data-label="name">NOT NULL</td>
+                                <td data-label="name"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="ui pink header c-margin-top-large">測試</h3>
+                        <p class="c-text-16">測試用例</p>
+                        <img src="../../static/images/sw-test.png" alt="" class="ui rounded image">
+
+                        <h3 class="ui pink header c-margin-top-large">功能截圖</h3>
+                        <p class="c-text-16">員工列表</p>
+                        <img src="../../static/images/sw-list.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">員工姓名查詢</p>
+                        <img src="../../static/images/sw-search.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">員工新增</p>
+                        <img src="../../static/images/sw-add.PNG" alt="" class="ui rounded image">
+                        <p></p>
+                        <p class="c-text-16">員工編輯</p>
+                        <img src="../../static/images/sw-update.PNG" alt="" class="ui rounded image">
+                        <p class="c-text-16">員工刪除</p>
+                        <img src="../../static/images/sw-del.PNG" alt="" class="ui rounded image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- right top content-->
+            <div class="four wide column right-content-include">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="ui inverted vertical segment c-padded-tb-massive footer-include">
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script id="us"></script>
+<script>
+    $('#us').attr('src','../../static/js/custom.js?v='+new Date());
+</script>
+</body>
+</html>
