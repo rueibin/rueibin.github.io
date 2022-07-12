@@ -193,9 +193,14 @@ const RueiBin={
                 $('<div class="ui pink basic left label c-padded-mini">'+item.tag2+'</div>'),
                 $('<div class="ui blue basic left pointing label c-padded-mini">'+MMDD+'</div>'));
 
+            let strOriginal="原創";
+            if(item.date=="2022-06-16"){
+                strOriginal='參考'
+            }
+
             let aContent=$('<a></a>').addClass('item').attr('href',projectName+item.titleUrl).text(item.title+" ").append(
                 spanContent,
-                $('<div class="ui orange left label c-padded-mini">原創</div>')
+                $('<div class="ui orange left label c-padded-mini">'+strOriginal+'</div>')
             );
 
             $(".left-conent-segment").append($('<div class="ui fluid vertical menu"></div>').append(aContent));
