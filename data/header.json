@@ -43,5 +43,15 @@
     "title": "搜尋",
     "titleUrl": "/search.html",
     "id": 8
+  },
+  {
+    "title": "分類標籤",
+    "titleUrl": "/tag.html",
+    "id": 9
+  },
+  {
+    "title": "基礎學習",
+    "titleUrl": "/basic.html",
+    "id": 10
   }
 ]

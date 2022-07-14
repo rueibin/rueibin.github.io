@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../static/editormd/css/editormd.preview.min.css">
     <link rel="stylesheet" href="../../static/css/custom.css">
 </head>
 <body>
@@ -20,33 +21,127 @@
                 <!--left content list content-->
                 <div class="ui attached stackable segment">
                     <div class="ui centered header">
-                        <h1 class="ui blue header">Vue2.x入門（01）：Vue簡介</h1>
+                        <h1 class="ui blue header">Vue2.x入門（01）：Vue.js簡介</h1>
                         <div class="ui horizontal link list">
                             <div class="item">
-                                <i class="clock outline icon"></i>2022-06-19
+                                <i class="clock outline icon"></i>2022-07-14
                             </div>
                             <div class="item">
                                 <i class="idea icon"></i>網頁程式APP
                             </div>
                             <div class="item">
-                                <i class="tag icon"></i>Vue入門
+                                <i class="tag icon"></i>Vue.js入門
                             </div>
                         </div>
                         <div class="ui fitted divider"></div>
                     </div>
 
                     <div class="c-padded-left-right-responsive">
-                        <h3 class="ui pink header">1.Vue簡介</h3>
+
+                        <h3 class="ui pink header">1.Vue.js簡介</h3>
                         <p class="c-text-indent c-text-16">
-                            目前最新的版本是3.x，本教學採用2.x。
+                            Vue.js（/vjuː/，或簡稱為Vue）是一個建立於使用者介面的開源Model–View–ViewModel的前端JavaScript框架，
+                            也是一個建立單頁應用的Web應用框架。 它由尤雨溪建立，由他和其他活躍的核心團隊成員維護。
+                            <a href="https://zh.wikipedia.org/zh-tw/Vue.js" target="_blank">[維基百科]</a>
                         </p>
 
-                        <h3 class="ui pink header c-margin-top-large">功能截圖</h3>
+                        <p class="c-text-indent c-text-16">
+                            目前最新的版本是3.x，本教學採用2.x。
+                            官網地址：<a href="https://cn.vuejs.org/v2/guide/" target="_blank">https://cn.vuejs.org/v2/guide/</a>
+                        </p>
 
+                        <h3 class="ui pink header c-margin-top-large">2.安裝</h3>
+                        <p class="c-text-indent c-text-16">
+                            直接使用script引入
+                        </p>
 
+                        <!--editormd-include Begin-->
+                        <div id="editormd-include">
+                            <textarea style="display:none;">
+```html
+<!-- 下載到local端，引入local端的vue.js -->
+<script src="../lib/vue.min.js"></script>
+```
+                            </textarea>
+                        </div>
+                        <!--editormd-include End-->
 
+                        <h3 class="ui pink header c-margin-top-large">3.Vue的第一個入門應用</h3>
+                        <!--editormd-first Begin-->
+                        <div id="editormd-first">
+                            <textarea style="display:none;">
+```vue
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <!--引入核心js文件-->
+        <script src="../lib/vue.min.js"></script>
+    </head>
 
+    <body>
+        <div id="app">
+            <!--取得data中message變數對應的值-->
+            <p>{{message}}</p>
+        </div>
 
+        <script>
+            const app=new Vue({
+                el:'#app',
+                data:{
+                    message:'hello world'
+                }
+            });
+        </script>
+    </body>
+</html>
+```
+                            </textarea>
+                        </div>
+                        <!--editormd-first  End-->
+
+                        <h3 class="ui pink header c-margin-top-large">4.說明</h3>
+                        <span class="c-text-16">
+                            建立一個vue實體物件，一個頁中只能存在一個Vue實體物件
+                        </span>
+                        <!--editormd-app Begin-->
+                        <div id="editormd-app">
+                            <textarea style="display:none;">
+```vue
+const app=new Vue({ });
+```
+                            </textarea>
+                        </div>
+                        <!--editormd-app End-->
+
+                        <span class="c-text-16">
+                           el：element元素，代表vue實體物件的作用範圍
+                        </span>
+                        <!--editormd-el Begin-->
+                        <div id="editormd-el">
+                            <textarea style="display:none;">
+```vue
+el:'#app',
+```
+                            </textarea>
+                        </div>
+                        <!--editormd-el End-->
+
+                        <span class="c-text-16">
+                             data：自定義各種資料，用來給Vue實體物件綁定自定義資料，在Vue實體物件作用範圍內可以使用{{data屬性中變數名稱}}直接取得data中變數對應屬性值
+                        </span>
+                        <!--editormd-data Begin-->
+                        <div id="editormd-data">
+                            <textarea style="display:none;">
+```vue
+data:{
+  message:'hello world'
+}
+```
+                            </textarea>
+                        </div>
+                        <!--editormd-data End-->
 
                     </div>
                 </div>
@@ -64,9 +159,17 @@
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../../static/editormd/marked.min.js"></script>
+<script src="../../static/editormd/prettify.min.js"></script>
+<script src="../../static/editormd/editormd.min.js"></script>
 <script id="us"></script>
 <script>
     $('#us').attr('src','../../static/js/custom.js?v='+new Date());
+    editormd.markdownToHTML("editormd-include");
+    editormd.markdownToHTML("editormd-first");
+    editormd.markdownToHTML("editormd-app");
+    editormd.markdownToHTML("editormd-el");
+    editormd.markdownToHTML("editormd-data");
 </script>
 </body>
 </html>
