@@ -25,7 +25,7 @@
     "authorImageUrl": "https://picsum.photos/id/48/100/100",
     "tag1": "雜記",
     "tag2": "心情隨筆",
-    "type1": 5,
+    "type1": 6,
     "type2": 99,
     "tutorial": 0
   },
@@ -41,7 +41,7 @@
     "tag1": "美工繪圖",
     "tag2": "Photoshop",
     "type1": 3,
-    "type2": 20,
+    "type2": 21,
     "tutorial": 0
   },
   {
@@ -56,7 +56,7 @@
     "tag1": "作品",
     "tag2": "前端",
     "type1": 4,
-    "type2": 17,
+    "type2": 18,
     "tutorial": 0
   },
   {
@@ -69,9 +69,9 @@
     "contentImageUrl": "/static/images/vue2xcurd-list.PNG",
     "authorImageUrl": "https://picsum.photos/id/48/100/100",
     "tag1": "網頁程式APP",
-    "tag2": "Vue",
+    "tag2": "Vue.js",
     "type1": 1,
-    "type2": 12,
+    "type2": 13,
     "tutorial": 0
   },
   {
@@ -86,7 +86,7 @@
     "tag1": "美工繪圖",
     "tag2": "AutoCAD",
     "type1": 3,
-    "type2": 21,
+    "type2": 22,
     "tutorial": 0
   },
   {
@@ -101,7 +101,7 @@
     "tag1": "美工繪圖",
     "tag2": "AutoCAD",
     "type1": 3,
-    "type2": 21,
+    "type2": 22,
     "tutorial": 0
   },
   {
@@ -116,7 +116,7 @@
     "tag1": "網頁程式APP",
     "tag2": "PHP",
     "type1": 1,
-    "type2": 14,
+    "type2": 15,
     "tutorial": 0
   },
   {
@@ -131,7 +131,7 @@
     "tag1": "美工繪圖",
     "tag2": "AutoCAD",
     "type1": 3,
-    "type2": 21,
+    "type2": 22,
     "tutorial": 0
   },
   {
@@ -146,7 +146,7 @@
     "tag1": "美工繪圖",
     "tag2": "AutoCAD",
     "type1": 3,
-    "type2": 21,
+    "type2": 22,
     "tutorial": 0
   },
   {
@@ -161,7 +161,7 @@
     "tag1": "美工繪圖",
     "tag2": "AutoCAD",
     "type1": 3,
-    "type2": 21,
+    "type2": 22,
     "tutorial": 0
   },
   {
@@ -176,7 +176,7 @@
     "tag1": "網頁程式APP",
     "tag2": "前端",
     "type1": 1,
-    "type2": 15,
+    "type2": 18,
     "tutorial": 0
   },
   {
@@ -191,7 +191,7 @@
     "tag1": "網頁程式APP",
     "tag2": "Java",
     "type1": 1,
-    "type2": 9,
+    "type2": 12,
     "tutorial": 0
   },
   {
@@ -206,7 +206,7 @@
     "tag1": "作品",
     "tag2": "PHP",
     "type1": 4,
-    "type2": 14,
+    "type2": 15,
     "tutorial": 0
   },
   {
@@ -221,7 +221,7 @@
     "tag1": "作品",
     "tag2": "PHP",
     "type1": 4,
-    "type2": 14,
+    "type2": 15,
     "tutorial": 0
   },
   {
@@ -236,7 +236,7 @@
     "tag1": "網頁程式APP",
     "tag2": "Java",
     "type1": 1,
-    "type2": 11,
+    "type2": 12,
     "tutorial": 0
   },
   {
@@ -251,7 +251,7 @@
     "tag1": "作品",
     "tag2": "PHP",
     "type1": 4,
-    "type2": 14,
+    "type2": 15,
     "tutorial": 0
   },
   {
@@ -266,7 +266,7 @@
     "tag1": "作品",
     "tag2": "PHP",
     "type1": 4,
-    "type2": 14,
+    "type2": 15,
     "tutorial": 0
   }
 ]

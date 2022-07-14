@@ -25,33 +25,38 @@
     "id": 4
   },
   {
+    "title": "ERP",
+    "titleUrl": "/erp.html",
+    "id": 5
+  },
+  {
     "title": "雜記",
     "titleUrl": "/memo.html",
-    "id": 5
+    "id": 6
   },
   {
     "title": "歷史記錄",
     "titleUrl": "/history.html",
-    "id": 6
+    "id": 7
   },
   {
     "title": "關於我",
     "titleUrl": "/about.html",
-    "id": 7
+    "id": 8
   },
   {
     "title": "搜尋",
     "titleUrl": "/search.html",
-    "id": 8
+    "id": 9
   },
   {
     "title": "分類標籤",
     "titleUrl": "/tag.html",
-    "id": 9
+    "id": 10
   },
   {
     "title": "基礎學習",
     "titleUrl": "/basic.html",
-    "id": 10
+    "id": 11
   }
 ]
